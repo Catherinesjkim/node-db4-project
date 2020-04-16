@@ -6,7 +6,7 @@ module.exports = {
   client: "sqlite3", // db driver
   connection: {
     // could be an obj or a string
-    filename: "./data/produce.db3",
+    filename: "./data/recipe.db3",
   },
   useNullAsDefault: true, // only needed for SQLite
 },
@@ -52,3 +52,7 @@ module.exports = {
 // update coneection.js to require knexfile and use the development property as the knexConfig
 
 // create a migration with knex migrate:make recipes_table
+
+// change the db name inside knexfile.js
+
+// run the migration with knex migrate:latest
